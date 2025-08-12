@@ -44,7 +44,7 @@ ansible_facts_path: /etc/ansible/facts.d
 rhel9cis_selinux_disable: false
 # This variable is used in a preliminary task, handling grub2 paths either in case of
 # UEFI boot('/etc/grub2-efi.cfg') or in case of BIOS legacy-boot('/etc/grub2.cfg').
-rhel9cis_legacy_boot: false
+#rhel9cis_legacy_boot: false
 
 ## Benchmark name used by auditing control role
 # The audit variable found at the base
