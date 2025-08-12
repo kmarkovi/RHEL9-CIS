@@ -11,13 +11,13 @@
     - patch
     - rule_1.4.1
     - NIST800-53R5_AC-3
-  ansible.builtin.copy:
-    dest: /boot/grub2/user.cfg
-    content: "GRUB2_PASSWORD={{ rhel9cis_bootloader_password_hash }}"  # noqa template-instead-of-copy
-    owner: root
-    group: root
-    mode: 'go-rwx'
-  notify: Grub2cfg
+#  ansible.builtin.copy:
+#    dest: /boot/grub2/user.cfg
+#    content: "GRUB2_PASSWORD={{ rhel9cis_bootloader_password_hash }}"  # noqa template-instead-of-copy
+#    owner: root
+#    group: root
+#    mode: 'go-rwx'
+#  notify: Grub2cfg
 
 - name: "1.4.2 | PATCH | Ensure permissions on bootloader config are configured"
   when: rhel9cis_rule_1_4_2
