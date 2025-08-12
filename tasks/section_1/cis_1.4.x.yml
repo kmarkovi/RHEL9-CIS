@@ -2,7 +2,7 @@
 
 - name: "1.4.1 | PATCH | Ensure bootloader password is set"
   when:
-    - rhel9cis_set_boot_pass
+#    - rhel9cis_set_boot_pass
     - rhel9cis_rule_1_4_1
   tags:
     - level1-server
